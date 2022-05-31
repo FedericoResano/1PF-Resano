@@ -1,10 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-  title = '1PF-Resano';
+export class AppComponent implements OnInit{
+  title = 'Administración del Alumnado';  
+  usuario= localStorage.getItem('usuario');
+  ngOnInit():void{
+    
+   }
 }
